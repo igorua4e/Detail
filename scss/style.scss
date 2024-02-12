@@ -1,0 +1,179 @@
+//підключення шрифтів
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+//імпорт файлу обнулення//
+@import "reset";
+
+//імпорт файлу спільних модулів, стилів і т.д//
+@import "commons";
+
+
+
+
+
+//стилі для анімації
+
+//=====================================================================
+body{
+   font-family: "Open Sans", sans-serif;
+   font-weight: 400;
+   color: #000;
+   font-size: 17px;
+   line-height: 145%;
+
+}
+ //=================================================
+
+//for section header
+
+.header {   
+   padding-top: 14px;
+   margin-bottom: 59px;
+		&__container {
+         text-align: center;
+		}
+
+		&__logo {
+         img{
+            max-width: 100%;
+         }
+		}
+}
+//==========================================
+
+//for section promo
+
+.promo {
+   margin-bottom: 14px;
+   &__container {
+   }
+
+   &__img {
+      img{
+         max-width: 100%;
+      }
+   }
+}
+//===========================================
+
+//for section text
+
+.text {
+   margin-bottom: 15px;
+   &__container {
+      p{
+         max-width: 530px;
+         font-weight: 700;
+         margin: 0  auto;
+         &:not(:last-child){
+            margin-bottom: 20px;
+         }
+      }
+      text-align: center;
+   }
+}
+//==========================================
+
+//for section links
+
+.links {
+   margin-bottom: 14px;
+   &__container {
+      a{
+         display: block;
+         font-size: 16px;
+         line-height: 120%;
+         text-transform: uppercase;
+         text-align: center;
+         color: #fff;
+         border-radius: 20px;
+         padding: 20px 0px;
+         font-weight: 700;
+      }
+   }
+}
+.decor-item {
+   position: relative;
+   margin-bottom: 88px;
+   &::after{
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      width: 213px;
+      height: 17px;
+      background: url('../img/decor.png') 0 0 no-repeat;
+      transform: translateX(-50%);
+   }
+}
+.light-green {
+   background: #55cd6c;
+   &:not(:last-child){
+      margin-bottom: 88px;
+   }
+}
+.red {
+   background: #c92a2a;
+   margin-bottom: 14px;
+}
+.dark-green {
+   background: #5c940d;
+   margin-bottom: 14px;
+}
+.black {
+   background: #343a40;
+   margin-bottom: 14px;
+}
+.decor-item2 {
+   position: relative;
+   margin-bottom: 73px;
+   &::after{
+      content: '';
+      position: absolute;
+      bottom: -36px;
+      left: 50%;
+      width: 164px;
+      height: 1px;
+      background-color: #000;
+      transform: translateX(-50%);
+   }
+}
+//=====================================================
+
+//for section video
+
+.video {
+   margin-bottom: 30px;
+   &__container {
+
+   }
+}
+
+//=======================================
+
+//for section content
+
+.content {
+
+   &__container {
+      text-align: center;
+      p{
+         margin-bottom: 28px;
+      }
+   }
+}
+.min {
+   display: block;
+   max-width: 270px;
+   margin: 0 auto;
+}
+.italic {
+   font-style: italic;
+}
+
+
+
+
+
+
+
+

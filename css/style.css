@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+/*обнулення */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*______обнуление*/
+/*====================================================*/
+/*в початковий шаблон для оболочки та контейнеру*/
+/*знаходить в імені класу контеінер і застосовує стилі*/
+[class*=__container] {
+  max-width: 850px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+/*==============================================*/
+span {
+  font-weight: 700;
+  color: #c92a2a;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 17px;
+  line-height: 145%;
+}
+
+.header {
+  padding-top: 14px;
+  margin-bottom: 59px;
+}
+.header__container {
+  text-align: center;
+}
+.header__logo img {
+  max-width: 100%;
+}
+
+.promo {
+  margin-bottom: 14px;
+}
+.promo__img img {
+  max-width: 100%;
+}
+
+.text {
+  margin-bottom: 15px;
+}
+.text__container {
+  text-align: center;
+}
+.text__container p {
+  max-width: 530px;
+  font-weight: 700;
+  margin: 0 auto;
+}
+.text__container p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.links {
+  margin-bottom: 14px;
+}
+.links__container a {
+  display: block;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px 0px;
+  font-weight: 700;
+}
+
+.decor-item {
+  position: relative;
+  margin-bottom: 88px;
+}
+.decor-item::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  width: 213px;
+  height: 17px;
+  background: url("../img/decor.png") 0 0 no-repeat;
+  transform: translateX(-50%);
+}
+
+.light-green {
+  background: #55cd6c;
+}
+.light-green:not(:last-child) {
+  margin-bottom: 88px;
+}
+
+.red {
+  background: #c92a2a;
+  margin-bottom: 14px;
+}
+
+.dark-green {
+  background: #5c940d;
+  margin-bottom: 14px;
+}
+
+.black {
+  background: #343a40;
+  margin-bottom: 14px;
+}
+
+.decor-item2 {
+  position: relative;
+  margin-bottom: 73px;
+}
+.decor-item2::after {
+  content: "";
+  position: absolute;
+  bottom: -36px;
+  left: 50%;
+  width: 164px;
+  height: 1px;
+  background-color: #000;
+  transform: translateX(-50%);
+}
+
+.video {
+  margin-bottom: 30px;
+}
+.content__container {
+  text-align: center;
+}
+.content__container p {
+  margin-bottom: 28px;
+}
+
+.min {
+  display: block;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.italic {
+  font-style: italic;
+}
